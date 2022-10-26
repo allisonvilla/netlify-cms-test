@@ -13,12 +13,12 @@ export default function Posts() {
 				<h1>{title}</h1>
 				<PostContent />
 				<ul>
-					{posts.map((post, k) => {
+					{posts.map((post, k) => (
 						<li key={k}>
 							<h2>{post.name}</h2>
 							<p>{post.content}</p>
-						</li>;
-					})}
+						</li>
+					))}
 				</ul>
 			</article>
 		</>
