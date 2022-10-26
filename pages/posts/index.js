@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { attributes, react as PostContent } from '../content/posts.md';
+import { attributes, react as PostContent } from '../../content/posts.md';
 
 export default function Posts() {
 	let { title, posts } = attributes;
