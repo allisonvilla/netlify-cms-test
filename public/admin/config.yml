@@ -24,12 +24,18 @@ collections:
                             name: 'description',
                             widget: 'text',
                         }
-            - label: 'Posts'
-              name: 'posts'
-              file: 'content/posts.md'
-              fields: 
-                  - {label: 'Title', name: 'title', widget: 'string'}
-                  - label: 'Posts', name: 'posts', widget: list
-                    fields: 
-                      - { label: 'Name', name: 'name', widget: 'string'}
-                      - {label: 'Description', name: 'description', widget: 'text'}
+          - name: 'posts'
+            label: 'Posts'
+            file: 'content/posts.md'
+            fields:
+                - { label: 'Title', name: 'title', widget: 'string' }
+                - label: 'Posts'
+                  name: 'posts'
+                  widget: list
+                  fields:
+                      - { label: 'Name', name: 'name', widget: 'string' }
+                      - {
+                            label: 'Description',
+                            name: 'description',
+                            widget: 'text',
+                        }
